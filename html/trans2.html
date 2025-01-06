@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+        }
+        input:checked ~ .a1 img{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-out;
+        }
+        input:checked ~ .a2 img{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function:linear;
+        }
+        input:checked ~ .a3 img{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        input:checked ~ .a4 img{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio">
+    <div class="a1"><img src="./assets/images/car5.jpeg" alt=""></div>
+    <div class="a2"><img src="./assets/images/car2.jpeg" alt=""></div>
+    <div class="a3"><img src="./assets/images/car3.jpeg" alt=""></div>
+    <div class="a4"><img src="./assets/images/car4.jpeg" alt=""></div>
+    
+</body>
+</html>

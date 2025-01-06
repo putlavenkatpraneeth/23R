@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;}
+       
+        .nav{
+    border: 1px solid;
+    height: 10vh;
+    width: 100vw;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    color: white;
+   }
+.n1{
+    display: flex;
+    align-items: center;
+}
+   .n2{
+    display: flex;
+    gap: 10px;
+   }      
+     .j1{
+         border: 1px solid;
+         height: 400px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+
+     }
+     .j2{
+      border: 1px solid;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   
+     }
+    
+      #text{
+         height: 50px;
+         width: 250px;
+         background-color: rgb(157, 220, 245);
+         border-radius: 5px;
+      }
+      #email{
+         height: 50px;
+         width: 250px;
+         background-color: rgb(157, 220, 245);
+         border-radius: 5px;
+      }
+      #msg{
+         height: 200px;
+         width: 510px;
+         background-color: rgb(157, 220, 245);
+         border-radius: 5px;
+      }
+      #but{
+         height: 50px;
+         width: 300px;
+         transform: translate(100px);
+         color: white;
+         background-color: #00798c;
+         border-radius: 30px;
+      }
+    </style>
+</head>
+<body>
+
+   <div class="nav">
+      <div class="n1">
+        <p><img src="./assets/images/trending (1).png" alt="" height="50vh" /></p>
+        <div><h2>Digital Trend</h2></div>
+      </div>
+      <div class="n2">
+        <p><a href="#studio" id="std">Studio</a></p>
+        <p><a href="#our works" id="std">OurWork</a></p>
+        <p><a href="./object.html" id="std">Blog</a></p>
+        <p> <span style="color: gold; border: 1px solid; height: 6vh;width: 8vw; border-radius: 10px;">Contact </span></p>
+      </div>
+    </div>
+     <div class="j1">
+      <h1> <span style="font-size: 40px;">Hey there, Let's <span style="color: gold;">talk </span> <br><span style="color: gold;">creative </span></span>projects</h1>
+      <p><span style="font-size: larger;">or email us at hello@company.com </span><br> <br> <span style="background-color: gold; font-size: larger;">Please follow our contact page to setup the contact form.</span></p>
+     </div>
+     <div class="j2">
+   <form>
+   <div><input type="text" id="text" placeholder="name" >  <input type="email" name="email" id="email" placeholder=" Email" required></div><br><br>
+   <div><input type="text" id="msg" placeholder="messge"></div><br>
+   <div><input type="button" name="button" id="but" value="send messge"></div>
+   </form>
+
+
+     </div>
+     
+</body>
+</html>

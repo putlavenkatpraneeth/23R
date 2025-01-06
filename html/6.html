@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .nav {
+        border: 1px solid white;
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        color: blue;
+      }
+      .flex {
+        display: flex;
+        gap: 10px;
+      }
+      .a1 {
+        border: 1px solid white;
+        height: 80vh;
+        width: 100vw;
+        background-image: url(./assets/images/neom-eOWabmCNEdg-unsplash.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        color: white;
+      }
+      .bold {
+        font-size: xx-large;
+        margin-left: 20vw;
+      }
+      .bold1 {
+        margin-left: 20vw;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .button {
+        border: 1px solid;
+        height: 5vh;
+        width: 20vh;
+        background-color: white;
+        color: blue;
+        text-align: center;
+        align-content: center;
+      }
+      .mid2 {
+        border: 1px solid;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .mid {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .item1 {
+        border: 1px solid;
+        height: 30vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: width 2s, height 2s;
+      }
+      .item2 {
+        border: 1px solid;
+        height: 30vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: width 2s, height 2s;
+      }
+      .item3 {
+        border: 1px solid;
+        height: 30vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: width 2s, height 2s;
+      }
+      #u:hover {
+        color: brown;
+        cursor: pointer;
+      }
+      .nav {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+      }
+      .item1:hover {
+        height: 35vh;
+        width: 25vw;
+        border-color: blueviolet;
+      }
+      .item2:hover {
+        height: 35vh;
+        width: 25vw;
+        border-color: blueviolet;
+      }
+      .item3:hover {
+        height: 35vh;
+        width: 25vw;
+        border-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div><h1 id="u">Travel</h1></div>
+      <div class="flex">
+        <p id="u">home</p>
+        <p id="u">services</p>
+        <p id="u">contact us</p>
+      </div>
+    </nav>
+
+    <div class="a1">
+      <div class="bold">
+        <h1>Fuel Mind</h1>
+        <h1>Travel</h1>
+      </div>
+      <div class="bold1">
+        <p>lorem ea laborum tempore sapetine illo.</p>
+        <p>maxime provident volubtabus odit eligendi</p>
+        <button class="button">lets go now!</button>
+      </div>
+    </div>
+
+    <div class="mid2">
+      <div>
+        <h1>start your vacation</h1>
+        <h1>with lots of services</h1>
+      </div>
+      <div class="mid">
+        <div class="item1">
+          <img src="./assets/images/boat.jpeg" alt="" height="40vh" />
+          <h3>Ship cruise</h3>
+          <p style="font-size: small">150 properties</p>
+        </div>
+        <div class="item2">
+          <img src="./assets/images/boat.jpeg" alt="" height="40vh" />
+          <h3>Ship cruise</h3>
+          <p style="font-size: small">150 properties</p>
+        </div>
+        <div class="item3">
+          <img src="./assets/images/boat.jpeg" alt="" height="40vh" />
+          <h3>Ship cruise</h3>
+          <p style="font-size: small">150 properties</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

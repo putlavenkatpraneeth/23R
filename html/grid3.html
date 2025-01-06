@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .md {
+        height: 70vh;
+        width: 80vw;
+        background-color: red;
+        display: grid;
+        gap: 5px;
+        padding: 10px;
+        grid-template-areas: 
+        'area1 area2 area3'
+        'area1 area5 area6'
+        'area7 area5 area9';
+      }
+      .item1 {
+        background-color: aqua;
+        /* height: 125px; */
+        /* width: 125px; */
+        grid-area: area1;
+        background-image: url(./assets/images/p3.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover ;
+      }
+      .item2 {
+        background-color: aqua;
+        height: 125px;
+        width: 125px;
+        grid-area: area2;
+        background-image: url(./assets/images/p2.jpeg);
+        background-size: contain;
+      }
+      .item3 {
+        background-color: aqua;
+        height: 125px;
+        width: 125px;
+        grid-area: area3;
+        background-image: url(./assets/images/p5.jpeg);
+        background-size: contain;
+      }
+      /* .item4 {
+         background-color: aqua; 
+        height: 125px;
+        width: 125px;
+        grid-area: area4;
+      } */
+      .item5 {
+        background-color: aqua;
+        /* height: 125px; */
+        width: 125px;
+        grid-area: area5;
+        background-image: url(./assets/images/p7.jpeg);
+        background-size: cover;
+
+      }
+      .item6 {
+        background-color: aqua;
+        height: 125px;
+        width: 125px;
+        grid-area: area6;
+        background-image: url(./assets/images/p1.jpeg);
+        background-size: contain;
+      }
+      .item7 {
+        background-color: aqua;
+        height: 125px;
+        width: 125px;
+        grid-area: area7;
+        background-image: url(./assets/images/p6.jpeg);
+        background-size: contain;
+      }
+      /* .item8 {
+        background-color: aqua; 
+        height: 125px;
+        width: 125px;
+        grid-area: area8;
+      } */
+      .item9 {
+        background-color: aqua;
+        height: 125px;
+        width: 125px;
+        grid-area: area9;
+        background-image: url(./assets/images/weeknd.jpeg);
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+      <div class="item6"></div>
+      <div class="item7"></div>
+      <div class="item8"></div>
+      <div class="item9"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Trend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #00798c;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero {
+            background-color: #4ebfb4;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #4ebfb4;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .section-title span {
+            color: #ffb400;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .service-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .testimonial-quote {
+            text-align: center;
+        }
+
+        .testimonial-quote img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .testimonial-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+        }
+
+        .testimonial-content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .testimonial-content span {
+            font-weight: bold;
+            color: #00798c;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 50px;
+        }
+
+        footer .footer-top {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 50px;
+        }
+
+        footer h3 {
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Digital Trend</div>
+        <nav>
+            <ul>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Our Works</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>We are ready for your digital marketing</h1>
+        <p>Let us discuss together!</p>
+        <button>Contact Us</button>
+    </section>
+
+    <!-- Digital Marketing Section -->
+    <section class="section-title">
+        <h2>the best <span>Digital Marketing</span> agency in Rio de Janeiro</h2>
+        <p>Total 5 HTML pages are included in this template from TemplateMo website.</p>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section-title">
+        <h2>Please take a look through our <span>featured Digital Trends</span></h2>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-item">
+            <img src="https://via.placeholder.com/400x300" alt="Service 1">
+            <h3>Race Bicycle</h3>
+            <p>Social Media</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/400x300" alt="Service 2">
+            <h3>Office Spaces</h3>
+            <p>Social Media</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/400x300" alt="Service 3">
+            <h3>Ultimate Healthcare</h3>
+            <p>Social Media</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonial-quote">
+            <img src="https://via.placeholder.com/100" alt="Testimonial">
+        </div>
+        <div class="testimonial-content">
+            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</p>
+            <span>- Jenny Doe, Digital Agency</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div>
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum.</p>
+            </div>
+            <div>
+                <h3>Contact Info</h3>
+                <p>Phone: +00 000 000 000</p>
+                <p>Email: info@example.com</p>
+                <p>Address: 123 Rio de Janeiro, Brazil</p>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <p>Facebook, Twitter, Instagram</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

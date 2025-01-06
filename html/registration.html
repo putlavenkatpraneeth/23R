@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1 {text-align: center;}
+       #email{
+        
+        }
+        #submit{
+          height: 30px;
+        }
+    </style>
+  </head>
+  <body>
+ <h1>CVR ENGINEERING COLLEGE</h1>
+ <h2>registration form:</h2>
+    <form>
+      <label for="firstname">first name:</label>
+      <input type="text" id="first name" name="first name" /><br>
+      <label>last name:</label>
+      <input type="text" name="last name" id="last name" /><br>
+      <label>father name:</label>
+      <input type="text" id="father name" name="father name" required><br>
+      <label>email:</label>
+      <input type="email" name="email" id="email"><br>
+      <label>phone no:</label>
+      <input type="tel" name="phone no." id="phone no." pattern="0-9"><br>
+      <label for="branch">choose branch:</label>
+      <select id="branch">
+        <option value="ece">ece</option>
+        <option value="civil">civil</option>
+        <option value="cse">cse</option>
+      </select><br>
+      <label>date of birth:</label>
+      <input type="date" id="date" name="date"><br>
+      <label>set username:</label>
+      <input type="text" id="set username" name="set username"><br>
+      <label>set password:</label>
+      <input type="password" id="password" name="password"><br>
+      <label>select gender:</label><br>
+      <input type="radio" id="select gender" name="select gender" value="male">male<br>
+      <input type="radio" id="select gender" name="select gender" value="female">female<br>
+      <input type="radio" id="select gender" name="select gender" value="others">others<br>
+      <label>skills:</label><br>
+      <input type="checkbox" id="skills" name="skills" value="communication">communication<br>
+      <input type="checkbox" id="skills" name="skills" value="coding">coding<br>
+      <input type="checkbox" id="skills" name="skills" value="problem solving">problem solving<br>
+      <input type="checkbox" id="skills" name="skills" value="time management">time management<br>
+    <button type="submit" id="submit">register</button>
+    </form>
+  </body>
+</html>

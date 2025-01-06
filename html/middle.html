@@ -1,0 +1,439 @@
+<!-- /<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .middle1 {
+            border: 1px solid;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(223, 242, 250);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .middle2 {
+            display: flex;
+            gap: 30px;
+            transition: transform 1s ease;
+        }
+
+        .item {
+            border: 1px solid;
+            height: 40vh;
+            width: 40vw;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .item1 {
+            background-image: url(./assets/images/project-image01.jpg);
+        }
+
+        .item2 {
+            background-image: url(./assets/images/project-image02.jpg);
+        }
+
+        .item3 {
+            background-image: url(./assets/images/project-image03\ \(1\).jpg);
+        }
+
+        .item4 {
+            background-image: url(./assets/images/project-image04.jpg);
+        }
+
+        .item5 {
+            background-image: url(./assets/images/);
+        }
+
+        .w1 {
+            font-size: 20px;
+            display: flex;
+        }
+
+        @media screen and (max-width: 768px) {
+            .item {
+                height: 30vh;
+                width: 90vw;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .item {
+                height: 40vh;
+                width: 40vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="middle1">
+        <div class="w1"><h1>Please take a look <br>through our <span style="color: gold;">featured <br>Digital Trends</span></h1></div>
+        <div class="middle2">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function slideImages() {
+            const slides = document.querySelector('.middle2');
+            const totalSlides = slides.children.length;
+            const slideWidth = slides.children[0].offsetWidth;
+
+            // Move to the next slide
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+        }
+
+        // Set interval to slide images every 3 seconds
+        setInterval(slideImages, 3000);
+    </script>
+
+</body>
+</html> 
+
+
+
+
+
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Testimonials</title>
+   
+    <style>
+      /* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Main container */
+.last {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 40px;
+    background-color: #121212;
+}
+
+/* Grid Items */
+.p1 h2 {
+    font-size: 2rem;
+    color: gold;
+}
+
+.p2, .p3, .p4, .p5, .p6 {
+    font-size: 1rem;
+}
+
+.p2 span, .p3 span {
+    color: gold;
+}
+
+/* Footer and links */
+.p4 p {
+    font-size: 0.9rem;
+    color: lightgray;
+}
+
+.p5 a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.p5 a:hover {
+    color: gold;
+}
+
+.p6 a {
+    margin-right: 15px;
+}
+
+.p6 img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design for Tablets and Mobiles */
+@media (max-width: 1024px) {
+    .last {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .p1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .p2, .p3, .p4, .p5, .p6 {
+        font-size: 1rem;
+    }
+
+    .p5 a {
+        margin-right: 10px;
+    }
+
+    .p6 img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* For large screens */
+@media (min-width: 1440px) {
+    .last {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        padding: 60px;
+        gap: 50px;
+    }
+
+    .p1 h2 {
+        font-size: 2.5rem;
+    }
+
+    .p2, .p3, .p4, .p5, .p6 {
+        font-size: 1.1rem;
+    }
+
+    .p6 img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+    </style>
+</head>
+<body>
+  <div class="last">
+    <div class="p1">
+        <h2>We make creative brands only.</h2>
+    </div>
+    <div class="p2">
+        <p>Phone: <span>+123 456 7890</span></p>
+        <p>Email: <span>contact@creativebrand.com</span></p>
+    </div>
+    <div class="p3">
+        <p>Address: <span>123 Creative Street, City</span></p>
+    </div>
+    <div class="p4">
+        <p>&copy; 2024 Creative Brand. All rights reserved.</p>
+    </div>
+    <div class="p5">
+        <a href="#">Stories</a>
+        <a href="#">Work with us</a>
+        <a href="#">Privacy</a>
+    </div>
+    <div class="p6">
+        <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+        <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Testimonials</title>
+   
+    <style>
+      /* Global reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      /* Body */
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #121212;
+          color: #fff;
+      }
+
+      /* Main container */
+      .last {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, auto);
+          gap: 20px;
+          padding: 40px;
+          background-color: #121212;
+      }
+
+      /* Grid Items */
+      .p1 h2 {
+          font-size: 2rem;
+          color: gold;
+      }
+
+      .p2, .p3, .p4, .p5, .p6 {
+          font-size: 1rem;
+      }
+
+      .p2 span, .p3 span {
+          color: gold;
+      }
+
+      /* Footer and links */
+      .p4 p {
+          font-size: 0.9rem;
+          color: lightgray;
+      }
+
+      .p5 a {
+          margin-right: 20px;
+          color: white;
+          text-decoration: none;
+      }
+
+      .p5 a:hover {
+          color: gold;
+      }
+
+      .p6 a {
+          margin-right: 15px;
+      }
+
+      .p6 img {
+          width: 30px;
+          height: 30px;
+      }
+
+      /* Responsive Design for Tablets and Mobiles */
+      @media (max-width: 1024px) {
+          .last {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(6, auto);
+          }
+
+          .p1 h2 {
+              font-size: 1.5rem;
+          }
+
+          .p2, .p3, .p4, .p5, .p6 {
+              font-size: 1rem;
+          }
+
+          .p5 a {
+              margin-right: 10px;
+          }
+
+          .p6 img {
+              width: 25px;
+              height: 25px;
+          }
+      }
+
+      /* For large screens */
+      @media (min-width: 1440px) {
+          .last {
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(3, auto);
+              padding: 60px;
+              gap: 50px;
+          }
+
+          .p1 h2 {
+              font-size: 2.5rem;
+          }
+
+          .p2, .p3, .p4, .p5, .p6 {
+              font-size: 1.1rem;
+          }
+
+          .p6 img {
+              width: 35px;
+              height: 35px;
+          }
+      }
+
+    </style>
+</head>
+<body>
+
+  <div class="last">
+    <div class="p1">
+        <h2>We make creative brands only.</h2>
+    </div>
+
+    <div class="p2">
+        <p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Phone_icon.svg" alt="Phone" width="20" height="20">
+            Phone: <span>+123 456 7890</span>
+        </p>
+        <p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Email_icon.svg" alt="Email" width="20" height="20">
+            Email: <span>contact@creativebrand.com</span>
+        </p>
+    </div>
+
+    <div class="p3">
+        <p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Map_marker_icon.svg" alt="Address" width="20" height="20">
+            Address: <span>123 Creative Street, City</span>
+        </p>
+    </div>
+
+    <div class="p4">
+        <p>&copy; 2024 Creative Brand. All rights reserved.</p>
+    </div>
+
+    <div class="p5">
+        <a href="#">Stories</a>
+        <a href="#">Work with us</a>
+        <a href="#">Privacy</a>
+    </div>
+
+    <div class="p6">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_logo_2012.svg" alt="Twitter"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/LinkedIn_logo_2013.svg" alt="LinkedIn"></a>
+    </div>
+  </div>
+
+</body>
+</html>
+
