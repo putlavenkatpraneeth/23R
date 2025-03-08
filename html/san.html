@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .nav {
+            border: 1px solid;
+            height: 10vh;
+            width: 100%;
+            background-color: lightseagreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        .nav .n1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav .n2 {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .nav .n2 p {
+            margin: 0;
+            padding: 0;
+        }
+        .k1 {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .k2 {
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .k3 {
+            height: 300px;
+            width: 400px;
+            background-image: url(./assets/images/personal-website.png);
+            background-size: cover;
+        }
+        .k4 {
+            height: 300px;
+            width: 500px;
+        }
+        .k5 {
+            height: 100vh;
+            width: 100%;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+        }
+        .k6 {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .k7 {
+            transform: translate(-200px);
+        }
+        [title="src"] {
+            transform: translate(0px, 40px);
+        }
+        .last {
+            border: 1px solid;
+            height: 70vh;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: white;
+            align-items: center;
+            background-color: rgb(40, 39, 39);
+            align-content: space-around;
+        }
+        .p1 {
+            height: 25vh;
+            width: 35vw;
+            font-size: xx-large;
+            transform: translate(20px);
+        }
+        .p2, .p3, .p4, .p5, .p6 {
+            width: 30vw;
+            height: 20vh;
+        }
+        .p1 {
+            font-size: xx-large;
+        }
+        .p2 {
+            font-size: large;
+        }
+        .p3, .p4, .p5 {
+            text-align: center;
+        }
+        .s51:hover {
+            color: gold;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 10px;
+            }
+            .nav .n1, .nav .n2 {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            .k1 {
+                height: 300px;
+                font-size: 1.2rem;
+            }
+            .k2 {
+                flex-direction: column;
+                gap: 20px;
+                height: auto;
+            }
+            .k3, .k4 {
+                width: 90%;
+                height: auto;
+            }
+            .k5 {
+                height: auto;
+                width: 100%;
+            }
+            .last {
+                flex-direction: column;
+                align-items: center;
+            }
+            .p1, .p2, .p3, .p4, .p5, .p6 {
+                width: 90%;
+                height: auto;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .k1 {
+                height: 250px;
+            }
+            .k2 {
+                gap: 10px;
+            }
+            .k3, .k4 {
+                width: 100%;
+                height: auto;
+            }
+            .p1 {
+                font-size: large;
+                width: 100%;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="n1">
+            <p><img src="./assets/images/trending (1).png" alt="" height="50vh" /></p>
+            <div><h2>Digital Trend</h2></div>
+        </div>
+        <div class="n2">
+            <p><a href="#studio" id="std">Studio</a></p>
+            <p><a href="#our-works" id="std">Our Work</a></p>
+            <p><a href="./object.html" id="std">Blog</a></p>
+            <p><span style="color: gold; border: 1px solid; height: 6vh;width: 8vw; border-radius: 10px;">Contact</span></p>
+        </div>
+    </div>
+
+    <div class="k1">
+        <p>DIGITAL MARKETING AGENCY</p>
+        <h1>127+ Duis sollicitudin urna id elit pulvinar <br>placerat </h1>
+    </div>
+    <img src="./assets/images/interview-process.jpg" alt="" height="700px" width="100%">
+    <div class="k2">
+        <div class="k3"></div>
+        <div class="k4">
+            <h1>Pellentesque pretium <br>interdum </h1>
+            <p><span style="font-size: larger;">Nunc sapien nulla, interdum at diam non, aliquam <br> vestibulum leo. Fusce laoreet malesuada ante, <br> consectetur consequat.</span></p>
+            <ul>
+                <span style="font-size: large;">
+                    <li>Curabitur commodo a sapien non</li>
+                    <li>Sed facilisis convallis turpis</li>
+                    <li>Quisque placerat augue neque</li>
+                    <li>Nullam fringilla arcu a tortor</li>
+                </span>
+            </ul>
+        </div>
+    </div>
+
+    <div class="k5"><iframe width="780" height="655" src="https://www.youtube.com/embed/2Bj_vMRCygM?si=_ls1kJJe5cx51l9-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="k6">
+        <h2>Curabitur egestas mollis tellus sit amet porttitor. Sed leo nisl, posuere at <br> molestie ac, suscipit auctor mauris. Etiam quis metus elementum, <br> tempor risus vel.</h2>
+        <div class="k7"> <img title="src" src="./assets/images/male-avatar.png" alt="" height="100px"> Angelo Sharp, Creative Director</div>
+    </div>
+
+    <div class="last">
+        <div class="p1">
+            We make creative <br> <span style="color: gold;">brands</span> only.
+        </div>
+        <div class="p2">
+            <p>CONTACT INFO</p>
+            <p><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="20px"><path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C11.2364 16.7281 13.7559 16.4937 14.6692 15.6991L16.5562 12.9062Z" fill="currentColor"></path></svg> 12, Collins str, Newyork</p>
+            <p><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="20px"><path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C11.2364 16.7281 13.7559 16.4937 14.6692 15.6991L16.5562 12.9062Z" fill="currentColor"></path></svg> Call us - 1234567890</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
