@@ -22,9 +22,8 @@
         background-color: #f8f9fa;
       }
 
-      /* Navbar Styling */
       .nav-custom {
-        background-color:lightseagreen;
+        background-color: lightseagreen;
         color: white;
       }
 
@@ -49,7 +48,6 @@
         color: #20c997 !important;
       }
 
-      /* Header Styling */
       .header {
         background: linear-gradient(-8deg, #f5f4f4 33%, #05817b 20%);
         color: white;
@@ -90,7 +88,6 @@
         color: white;
       }
 
-      /* Media Queries */
       @media (max-width: 768px) {
         .header .y1 {
           font-size: 25px;
@@ -106,7 +103,6 @@
         }
       }
 
-      /* Featured Section Styling */
       .middle1 {
         background-color: #dff2fa;
         padding: 80px 0;
@@ -122,20 +118,22 @@
       .middle2 {
         display: flex;
         gap: 15px;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
+        scroll-behavior: smooth;
       }
 
       .middle2 .item {
-        border-radius: 15px;
         height: 250px;
+        min-width: 30%;
         width: 30%;
+        border-radius: 15px;
         background-size: cover;
         background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        flex-shrink: 0;
         transition: transform 0.3s ease;
       }
 
@@ -144,33 +142,32 @@
       }
 
       .middle2 .item1 {
-        background-image: url('./assets/images/project-image01.jpg');
+        background-image: url('./images/project/project-image01.jpg');
       }
 
       .middle2 .item2 {
-        background-image: url('./assets/images/project-image02.jpg');
+        background-image: url('./images/project/project-image02.jpg');
       }
 
       .middle2 .item3 {
-        background-image: url('./assets/images/project-image03\ \(1\).jpg');
+        background-image: url('./images/project/project-image03.jpg');
       }
 
       .middle2 .item4 {
-        background-image: url('./assets/images/project-image04.jpg');
+        background-image: url('./images/project/project-image04.jpg');
       }
 
       .middle2 .item5 {
-        background-image: url('./assets/images/project-image05.jpg');
+        background-image: url('./images/project/project-image05.jpg');
       }
-
 
       @media (max-width: 768px) {
         .middle2 .item {
-          width: 45%;
+          width: 80%;
+          min-width: 80%;
         }
       }
 
-      /* Footer Styling */
       .last {
         background-color: #212529;
         color: white;
@@ -203,7 +200,6 @@
         color: #ffd700;
       }
 
-      /* Grid Layout for Footer */
       .last .row {
         display: flex;
         flex-wrap: wrap;
@@ -218,13 +214,15 @@
       .last .col-md-4 .fs-6 {
         font-size: 16px;
       }
-      .pp{
-        background-image: url(./assets/images/working-girl.png);
+
+      .pp {
+        background-image: url(./images/working-girl.png);
         background-size: contain;
         background-repeat: no-repeat;
       }
-      .photo{
-        background-image: url(./assets/images/imp.png);
+
+      .photo {
+        background-image: url(./images/office.png);
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -235,7 +233,7 @@
     <nav class="navbar navbar-expand-lg nav-custom">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src="./assets/images/trending (1).png" alt="Logo" height="40" />
+          <img src="./images/trending (1).png" alt="Logo" height="40" />
           <h2 class="mb-0" style="color: white;">Digital Trend</h2>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -245,7 +243,7 @@
           <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item"><a class="nav-link" href="#">Studio</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Our Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="./blog1.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link contact-btn" href="#">Contact</a></li>
           </ul>
         </div>
@@ -265,11 +263,7 @@
             </div>
             <p class="phone">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="16px">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#edeef2"></path>
-                </g>
+                <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#edeef2"></path>
               </svg>
               +99 080 070 4224
             </p>
@@ -281,37 +275,25 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-    <div
-      class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center border"
-    >
+    <!-- Info Section -->
+    <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center border">
       <div class="mb-4 text-center">
         <h1>
           The best <span class="text-warning">Digital Marketing</span><br />
           <span class="text-warning">agency</span> in Rio de Janeiro
         </h1>
         <p class="fs-5">
-          Total 5 HTML pages are included in this template from templateMo
-          website.<br />
+          Total 5 HTML pages are included in this template from templateMo website.<br />
           Please check 2 blog pages, project page, and contact page.
         </p>
         <p class="fs-5">
-          You are <span class="text-warning">allowed</span> to use this template
-          for commercial or non-commercial<br />
-          purposes. You are NOT allowed to redistribute the template ZIP file
-          on<br />
-          template collection websites.
+          You are <span class="text-warning">allowed</span> to use this template for commercial or non-commercial<br />
+          purposes. You are NOT allowed to redistribute the template ZIP file<br />
+          on template collection websites.
         </p>
       </div>
       <div class="photo" style="height: 50vh; width: 50vw"></div>
     </div>
-
 
     <!-- Featured Section -->
     <div class="middle1">
@@ -321,7 +303,12 @@
           <span style="color: gold">featured <br />Digital Trends</span>
         </h1>
       </div>
-      <div class="middle2">
+      <div class="middle2" id="slider">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
         <div class="item item1"></div>
         <div class="item item2"></div>
         <div class="item item3"></div>
@@ -331,62 +318,63 @@
     </div>
 
     <!-- Footer -->
-   
-  <div class="last">
-    <div class="container mt-4">
-      <!-- Grid Container -->
-      <div class="row g-4 mb-4">
-        <!-- Row 1 -->
-        <div class="col-md-4 grid-item fs-3">
+    <div class="last">
+      <div class="container mt-4">
+        <div class="row g-4 mb-4">
+          <div class="col-md-4 grid-item fs-3">
             We make creative <p style="color: gold;">brands only.</p>
           </div>
-          
-        <div class="col-md-4 grid-item fs-6">
-          CONTACT INFO
-          <br>
-          +99 080 070 4224
-          <br>
-          hello@company.com
+          <div class="col-md-4 grid-item fs-6">
+            CONTACT INFO<br />
+            +99 080 070 4224<br />
+            hello@company.com
+          </div>
+          <div class="col-md-4 grid-item fs-6">
+            OUR STUDIO<br />
+            Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
+          </div>
         </div>
-        <div class="col-md-4 grid-item fs-6">
-          OUR STUDIO
-          <br>
-          Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
-        </div>
-      </div>
-      
-      <div class="row g-4">
-        <!-- Row 2 -->
-        <div class="col-md-4 grid-item fs-6">
-          Copyright © 2020 Your Company
-          <br>
-          Design: TemplateMo
-        </div>
-        <div class="col-md-4 grid-item fs-6">
-          Stories
-          <br>
-          Work with us
-          <br>
-          Privacy
-        </div>
-        <div class="col-md-4 grid-item social-icons">
-          <!-- Social Media Icons -->
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a href="https://www.whatsapp.com" target="_blank">
-            <i class="bi bi-whatsapp"></i>
-          </a>
+        <div class="row g-4">
+          <div class="col-md-4 grid-item fs-6">
+            Copyright © 2020 Your Company<br />
+            Design: TemplateMo
+          </div>
+          <div class="col-md-4 grid-item fs-6">
+            Stories<br />
+            Work with us<br />
+            Privacy
+          </div>
+          <div class="col-md-4 grid-item social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-    <!-- Bootstrap JS Bundle with Popper -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Image Slider JS -->
+    <script>
+      const slider = document.getElementById("slider");
+      let scrollAmount = 0;
+      const speed = 0.5;
+
+      function autoScroll() {
+        scrollAmount += speed;
+        if (scrollAmount >= slider.scrollWidth / 2) {
+          scrollAmount = 0;
+        }
+        slider.scrollTo({
+          left: scrollAmount,
+          behavior: "auto"
+        });
+        requestAnimationFrame(autoScroll);
+      }
+
+      requestAnimationFrame(autoScroll);
+    </script>
   </body>
 </html>
